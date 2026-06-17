@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoseMate – Privacy Policy</title>
+    <style>
+        :root {
+            --primary: #6C63FF;
+            --text: #1E1B4B;
+            --text-secondary: #374151;
+            --muted: #6B7280;
+            --bg: #F4F2FF;
+            --card: #FFFFFF;
+            --border: #E8E6F0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text-secondary);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--card);
+            border-radius: 20px;
+            padding: 3rem 2.5rem;
+            box-shadow: 0 4px 24px rgba(108, 99, 255, 0.08);
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--text);
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.5px;
+        }
+        .app-icon {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .app-icon span { font-size: 2rem; }
+        .subtitle {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+        }
+        .effective-date {
+            display: inline-block;
+            background: var(--bg);
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--text);
+            margin: 2rem 0 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--bg);
+        }
+        p, li {
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+        ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        li { margin-bottom: 0.4rem; }
+        .highlight-box {
+            background: var(--bg);
+            border-left: 4px solid var(--primary);
+            padding: 1rem 1.25rem;
+            border-radius: 0 12px 12px 0;
+            margin: 1.25rem 0;
+        }
+        .highlight-box strong {
+            color: var(--text);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            text-align: left;
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        th {
+            background: var(--bg);
+            color: var(--text);
+            font-weight: 700;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover { text-decoration: underline; }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+        @media (max-width: 640px) {
+            .container { padding: 2rem 1.25rem; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="app-icon"><span>💊</span></div>
+        <p style="margin-bottom: 1.5rem;"><a href="index.html" style="color: var(--primary); text-decoration: none; font-weight: 600;">← Back to DoseMate</a></p>
+        <h1>DoseMate – Privacy Policy</h1>
+        <p class="subtitle">Your health data stays on your device.</p>
+        <span class="effective-date">Effective Date: June 15, 2026</span>
+
+        <div class="highlight-box">
+            <strong>TL;DR:</strong> DoseMate stores all your health and medicine data <em>locally on your device</em>. We do <strong>not</strong> collect, transmit, or sell your personal health information. The only third-party service integrated is Google AdMob, which collects standard advertising identifiers as described below.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>
+            This Privacy Policy describes how <strong>DoseMate</strong> ("we," "us," or "our") handles information when you use our mobile application (the "App"). We are committed to protecting your privacy and being transparent about our data practices.
+        </p>
+        <p>
+            By using DoseMate, you agree to the collection and use of information as outlined in this policy. If you do not agree, please discontinue use of the App.
+        </p>
+
+        <h2>2. Information We Collect</h2>
+
+        <h2 style="font-size: 1.05rem; border-bottom: none; margin-top: 1.5rem;">2.1 Information Stored Locally on Your Device</h2>
+        <p>The following data is stored <strong>entirely on your device</strong> using local storage (Hive &amp; SharedPreferences). This data is <strong>never transmitted</strong> to our servers or any external server:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Examples</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Medicine Reminders</td>
+                    <td>Medicine names, dosages, schedules, reminder times</td>
+                    <td>Schedule and manage medication reminders</td>
+                </tr>
+                <tr>
+                    <td>Health Metrics</td>
+                    <td>Weight, height, BMI, water intake goals</td>
+                    <td>Calculate personalized health recommendations</td>
+                </tr>
+                <tr>
+                    <td>Diet Plans</td>
+                    <td>Food entries, meal schedules, calorie tracking</td>
+                    <td>Track nutrition and diet plans</td>
+                </tr>
+                <tr>
+                    <td>App Settings</td>
+                    <td>Theme preferences, notification settings, onboarding status</td>
+                    <td>Personalize your app experience</td>
+                </tr>
+                <tr>
+                    <td>Usage History</td>
+                    <td>Dose taken/missed logs, streak data</td>
+                    <td>Track medication adherence</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight-box">
+            <strong>Important:</strong> Since all data is stored locally, clearing the App's data or uninstalling the App will permanently delete all your health information. We recommend keeping your own backup if needed.
+        </div>
+
+        <h2 style="font-size: 1.05rem; border-bottom: none; margin-top: 1.5rem;">2.2 Information Collected by Google AdMob</h2>
+        <p>DoseMate uses <strong>Google AdMob</strong> to display advertisements. Google AdMob may automatically collect certain information, including:</p>
+        <ul>
+            <li><strong>Advertising ID</strong> – A unique, user-resettable identifier used for ad personalization.</li>
+            <li><strong>Device Information</strong> – Device model, operating system version, language, screen resolution.</li>
+            <li><strong>Network Information</strong> – IP address (used for approximate geolocation and fraud prevention), network type.</li>
+            <li><strong>App Usage Data</strong> – Ad impressions, clicks, and interactions with ads.</li>
+        </ul>
+        <p>This data is collected and processed by Google in accordance with the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+
+        <h2>3. How We Use Information</h2>
+        <p>We use the locally stored information <strong>solely</strong> to:</p>
+        <ul>
+            <li>Send medication and water reminders via device alarms and notifications.</li>
+            <li>Calculate BMI-based water intake goals.</li>
+            <li>Track and display your medication adherence history and streaks.</li>
+            <li>Personalize the app experience (theme, settings).</li>
+        </ul>
+        <p>We <strong>do not</strong> use your health data for advertising, analytics, or any purpose beyond the App's core functionality.</p>
+
+        <h2>4. Data Sharing &amp; Disclosure</h2>
+        <p>We <strong>do not</strong> sell, trade, or share your personal health information with any third party.</p>
+        <p>The only third-party service integrated in the App is <strong>Google AdMob</strong>, which operates independently and is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. AdMob may collect advertising identifiers and device information as described above.</p>
+        <p>We may disclose information only if required by law or in response to valid legal requests.</p>
+
+        <h2>5. Data Security</h2>
+        <p>We take reasonable measures to protect your information:</p>
+        <ul>
+            <li>All health data is stored locally on your device and is not transmitted over the internet.</li>
+            <li>No personal health data is transmitted over the internet.</li>
+            <li>The App uses HTTPS for any network requests (AdMob only).</li>
+        </ul>
+        <p>However, no method of electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+        <h2>6. Children's Privacy</h2>
+        <p>DoseMate is not directed to children under the age of 13 (or the applicable age of consent in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so we can take appropriate action.</p>
+
+        <h2>7. Your Rights</h2>
+        <p>Depending on your jurisdiction, you may have the following rights:</p>
+        <ul>
+            <li><strong>Access:</strong> Since all data is on your device, you can access it at any time through the App.</li>
+            <li><strong>Deletion:</strong> You can delete all your data by clearing the App's data in your device settings or by uninstalling the App.</li>
+            <li><strong>Opt-out of ad personalization:</strong> You can reset your advertising ID or opt out of personalized ads in your device settings (Settings → Privacy → Ads).</li>
+        </ul>
+
+        <h2>8. Third-Party Services</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Purpose</th>
+                    <th>Privacy Policy</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Google AdMob</td>
+                    <td>Display advertisements</td>
+                    <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page with an updated effective date. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>10. Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:</p>
+        <div class="highlight-box">
+            <strong>Email:</strong> <a href="rudraprakashmajhi@gmail.com">dosemate.app@gmail.com</a><br>
+            <strong>Developer:</strong> Rudra
+        </div>
+
+        <footer>
+            <p>DoseMate &copy; 2026. All rights reserved.</p>
+            <p style="margin-top: 0.25rem;">This privacy policy is effective as of June 15, 2026.</p>
+        </footer>
+    </div>
+</body>
+</html>

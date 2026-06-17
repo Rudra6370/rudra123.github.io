@@ -1,0 +1,11 @@
+# DoseMate Website
+User-agent: *
+Allow: /
+
+# Allow Google ads.txt crawler
+User-agent: AdsBot-Google
+Allow: /
+
+# Allow Google AdSense Host crawler
+User-agent: Google-AdSense-Host
+Allow: /
