@@ -107,5 +107,5 @@ Copyright © 2026 DoseMate. All rights reserved.
 
 ## 📧 Contact
 
-- **Email:** [dosemate.app@gmail.com](mailto:dosemate.app@gmail.com)
+- **Email:** [rudraprakashmajhi@gmail.com](mailto:rudraprakashmajhi@gmail.com)
 - **Google Play:** [DoseMate on Play Store](https://play.google.com/store/apps/details?id=com.rudra.dosemate)
