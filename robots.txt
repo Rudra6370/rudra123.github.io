@@ -1,4 +1,4 @@
-# DoseMate Website
+# Routinix Website
 User-agent: *
 Allow: /
 
