@@ -1,17 +1,19 @@
-# DoseMate 💊
+# Routinix ⏰
 
-**Never Miss Your Medicines**
+**Your personal reminder & habit tracker — stay organized, build healthy routines.**
 
-A smart medicine & health tracker with intelligent reminders, BMI-based water goals, diet plans, sleep tracking, and health analytics. Built with Flutter.
+Routinix is an all-in-one reminder, habit & health tracker built with Flutter. It pairs reliable reminders for medicines, water and tasks with a complete productivity hub — habits, routines, goals, focus sessions, step tracking, sleep logs, smart insights and gamification. Everything is stored **100% locally on your device**.
 
 ---
 
 ## 🌐 GitHub Pages Website
 
-The project includes a complete GitHub Pages website in the `docs/` folder:
+The project includes a complete GitHub Pages website:
 
 - **Landing Page:** [https://dosemate.github.io/dosemate/](https://dosemate.github.io/dosemate/)
 - **Privacy Policy:** [https://dosemate.github.io/dosemate/privacy-policy.html](https://dosemate.github.io/dosemate/privacy-policy.html)
+
+The website source lives in the `dosemate-website/` folder (a copy is kept in `docs/` for deployment).
 
 ### Deploy to GitHub Pages
 
@@ -26,28 +28,41 @@ Your site will be live at `https://<your-github-username>.github.io/dosemate/`
 
 ## 📱 Features
 
-- 💊 **Smart Medicine Reminders** — One-time, daily, or weekly schedules
-- 💧 **Water Intake Tracker** — BMI-based personalized hydration goals
-- 🌙 **Sleep Tracking** — Log sleep, set goals, get insights
-- 📊 **Health Analytics** — BMI, adherence charts, weekly breakdowns
+### Productivity Hub
+- ✅ **Habit Tracker** — Daily/weekly habits with completion logs and streaks
+- 📋 **Tasks** — To-dos with priorities, due dates and notes
+- 🔄 **Routines** — Multi-step routines with daily completion tracking
+- 🎯 **Goals** — Measurable targets with progress tracking and deadlines
+- ⏱️ **Focus Timer** — Focus sessions and daily deep-work minutes
+- 📔 **Journal & Mood** — Daily reflections and mood check-ins
+- 🏃 **Step Counter** — On-device step tracking with daily goals
+- 📅 **Calendar & Year Heatmap** — Visualize consistency over time
+- 🏆 **Gamification** — XP, levels, badges, achievements and streaks
+- 📊 **Productivity Score** — A daily score with trends and insights
+- 🔍 **Search & Smart Insights** — Search everything, get personalized insights
+
+### Reminders & Health
+- 💊 **Smart Reminders** — One-time, daily or weekly schedules with exact alarms and voice notifications
+- 💧 **Water Intake Tracker** — BMI-based personalized hydration goals with reminders
+- 🩺 **Health & BMI** — Health profile, BMI category and tracking
 - 🍽️ **Diet Plans** — Meal logging and calorie tracking
-- 🧠 **Behavioral Insights** — AI-powered habit analysis
-- 🔒 **100% Private** — All data stored locally on your device
-- 📦 **Backup & Restore** — Export and import your data
+- 🌙 **Sleep Tracking** — Log sleep, view stats and insights
+
+### Privacy & Control
+- 🔒 **100% Private** — All data stored locally on your device, no account needed
+- 📦 **Backup & Restore** — Export and import your data anytime
 
 ---
 
 ## 🔒 Privacy
 
-DoseMate stores all health and medicine data **locally on your device**. No personal health data is transmitted to external servers. The only third-party service is Google AdMob for ads.
+Routinix stores all reminders, habit, productivity and health data **locally on your device**. No personal data is transmitted to external servers. The only third-party service is Google AdMob for ads (banner, interstitial and rewarded), governed by Google's privacy policy.
 
 [View Privacy Policy](https://dosemate.github.io/dosemate/privacy-policy.html)
 
 ---
 
 ## 🚀 Getting Started
-
-This project is a starting point for a Flutter application.
 
 ### Prerequisites
 
@@ -73,24 +88,29 @@ flutter build apk --release
 
 ```
 dosemate/
-├── docs/                    # GitHub Pages website
-│   ├── index.html           # Landing page
-│   ├── privacy-policy.html  # Privacy policy
-│   └── robots.txt           # Crawler rules
-├── app-ads.txt              # AdMob publisher verification
+├── dosemate-website/         # Website source (index.html, privacy policy, README)
+├── docs/                     # GitHub Pages deployment copy
+│   ├── index.html
+│   ├── privacy-policy.html
+│   └── robots.txt
+├── app-ads.txt               # AdMob publisher verification
 ├── lib/
-│   ├── main.dart            # App entry point
+│   ├── main.dart             # App entry point, themes, startup
+│   ├── core/                 # Hive storage setup
 │   ├── features/
-│   │   ├── home/            # Dashboard
-│   │   ├── medicine/        # Medicine management
-│   │   ├── health/          # BMI, water, diet
-│   │   ├── sleep/           # Sleep tracking
-│   │   ├── insights/        # Behavioral insights
-│   │   ├── stats/           # Analytics & charts
-│   │   ├── history/         # Intake history
-│   │   ├── settings/        # App settings & backup
-│   │   └── onboarding/      # First-time setup
-│   └── services/            # Notifications, ads, reminders
+│   │   ├── productivity/     # Habits, tasks, routines, goals, focus, journal,
+│   │   │                     # mood, calendar, achievements, insights, export
+│   │   ├── reminder/         # Reminders (medicines, water, tasks)
+│   │   ├── health/           # BMI, water intake, diet plans
+│   │   ├── sleep/            # Sleep tracking
+│   │   ├── steps/            # Step counter
+│   │   ├── stats/            # Analytics & charts
+│   │   ├── history/          # Intake history
+│   │   ├── notes/            # Notes
+│   │   ├── onboarding/       # First-time setup
+│   │   ├── settings/         # App settings & backup
+│   │   └── home/             # Root dashboard (Productivity Hub)
+│   └── services/             # Notifications, voice, reminders, ads
 ├── android/
 ├── ios/
 ├── pubspec.yaml
@@ -101,11 +121,11 @@ dosemate/
 
 ## 📄 License
 
-Copyright © 2026 DoseMate. All rights reserved.
+Copyright © 2026 Routinix. All rights reserved.
 
 ---
 
 ## 📧 Contact
 
-- **Email:** [rudraprakashmajhi@gmail.com](mailto:rudraprakashmajhi@gmail.com)
-- **Google Play:** [DoseMate on Play Store](https://play.google.com/store/apps/details?id=com.rudra.dosemate)
+- **Email:** [dosemate.app@gmail.com](mailto:dosemate.app@gmail.com)
+- **Google Play:** [Routinix on Play Store](https://play.google.com/store/apps/details?id=com.rudra.dosemate)
