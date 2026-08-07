@@ -49,7 +49,7 @@ The project includes a complete GitHub Pages website:
 
 Routinix stores all reminders, habit, productivity and health data **locally on your device**. No personal data is transmitted to external servers. The only third-party service is Google AdMob for ads (banner, interstitial and rewarded), governed by Google's privacy policy.
 
-[View Privacy Policy](https://Routinix.github.io/Routinix/privacy-policy.html)
+[View Privacy Policy][([https://Routinix.github.io/Routinix/privacy-policy.html](https://rudra6370.github.io/routinix.github.io/privacy-policy.html))
 
 ---
 
