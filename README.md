@@ -15,15 +15,6 @@ The project includes a complete GitHub Pages website:
 
 
 
-### Deploy to GitHub Pages
-
-1. Go to your repository **Settings** → **Pages**
-2. Under **Source**, select **Deploy from a branch**
-3. Under **Branch**, select `main` (or `master`) and `/docs`
-4. Click **Save**
-
-Your site will be live at `https://<your-github-username>.github.io/Routinix/`
-
 ---
 
 ## 📱 Features
