@@ -10,10 +10,10 @@ Routinix is an all-in-one reminder, habit & health tracker built with Flutter. I
 
 The project includes a complete GitHub Pages website:
 
-- **Landing Page:** [https://dosemate.github.io/dosemate/](https://dosemate.github.io/dosemate/)
-- **Privacy Policy:** [https://dosemate.github.io/dosemate/privacy-policy.html](https://dosemate.github.io/dosemate/privacy-policy.html)
+- **Landing Page:** [https://Routinix.github.io/Routinix/](https://Routinix.github.io/Routinix/)
+- **Privacy Policy:** [https://Routinix.github.io/Routinix/privacy-policy.html](https://Routinix.github.io/Routinix/privacy-policy.html)
 
-The website source lives in the `dosemate-website/` folder (a copy is kept in `docs/` for deployment).
+The website source lives in the `Routinix-website/` folder (a copy is kept in `docs/` for deployment).
 
 ### Deploy to GitHub Pages
 
@@ -22,7 +22,7 @@ The website source lives in the `dosemate-website/` folder (a copy is kept in `d
 3. Under **Branch**, select `main` (or `master`) and `/docs`
 4. Click **Save**
 
-Your site will be live at `https://<your-github-username>.github.io/dosemate/`
+Your site will be live at `https://<your-github-username>.github.io/Routinix/`
 
 ---
 
@@ -58,7 +58,7 @@ Your site will be live at `https://<your-github-username>.github.io/dosemate/`
 
 Routinix stores all reminders, habit, productivity and health data **locally on your device**. No personal data is transmitted to external servers. The only third-party service is Google AdMob for ads (banner, interstitial and rewarded), governed by Google's privacy policy.
 
-[View Privacy Policy](https://dosemate.github.io/dosemate/privacy-policy.html)
+[View Privacy Policy](https://Routinix.github.io/Routinix/privacy-policy.html)
 
 ---
 
@@ -87,8 +87,8 @@ flutter build apk --release
 ## 📁 Project Structure
 
 ```
-dosemate/
-├── dosemate-website/         # Website source (index.html, privacy policy, README)
+Routinix/
+├── Routinix-website/         # Website source (index.html, privacy policy, README)
 ├── docs/                     # GitHub Pages deployment copy
 │   ├── index.html
 │   ├── privacy-policy.html
@@ -127,5 +127,5 @@ Copyright © 2026 Routinix. All rights reserved.
 
 ## 📧 Contact
 
-- **Email:** [dosemate.app@gmail.com](mailto:dosemate.app@gmail.com)
+- **Email:** [rudraprakashmajhi@gmail.com](mailto:rudraprakashmajhi@gmail.com)
 - **Google Play:** [Routinix on Play Store](https://play.google.com/store/apps/details?id=com.rudra.dosemate)
