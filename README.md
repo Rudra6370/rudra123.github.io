@@ -10,10 +10,10 @@ Routinix is an all-in-one reminder, habit & health tracker built with Flutter. I
 
 The project includes a complete GitHub Pages website:
 
-- **Landing Page:** [https://Routinix.github.io/Routinix/](https://Routinix.github.io/Routinix/)
+- **Landing Page:** [https://Routinix.github.io/Routinix/](https://rudra6370.github.io/routinix.github.io/))
 - **Privacy Policy:** [[https://Routinix.github.io/Routinix/privacy-policy.html](https://rudra6370.github.io/routinix.github.io/privacy-policy.html)
 
-The website source lives in the `Routinix-website/` folder (a copy is kept in `docs/` for deployment).
+
 
 ### Deploy to GitHub Pages
 
