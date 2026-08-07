@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DoseMate - Never Miss Your Medicines. Smart medicine reminders, water intake tracking, sleep insights, and health analytics.">
-    <meta name="keywords" content="medicine reminder, health tracker, medication tracker, water intake, sleep tracker, DoseMate">
-    <meta name="author" content="DoseMate">
-    <meta property="og:title" content="DoseMate – Never Miss Your Medicines">
-    <meta property="og:description" content="Smart medicine reminders, BMI-based water goals, sleep tracking, and health insights. Your all-in-one health companion.">
+    <meta name="description" content="Routinix - Your all-in-one reminder, habit & health tracker. Smart reminders, habit streaks, tasks, routines, goals, step counter, water intake, and health analytics - all private on your device.">
+    <meta name="keywords" content="Routinix, medicine reminder, habit tracker, task manager, routine planner, goal tracker, step counter, water intake, BMI, focus timer, sleep tracker, productivity app, health tracker">
+    <meta name="author" content="Routinix">
+    <meta property="og:title" content="Routinix – Reminder, Habit & Health Tracker">
+    <meta property="og:description" content="Smart reminders for medicines and tasks, habit streaks, routines, goals, step tracking, BMI-based water goals, and health insights. Your all-in-one productivity & health companion.">
     <meta property="og:type" content="website">
-    <meta name="theme-color" content="#6C63FF">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
+    <meta name="theme-color" content="#3580FD">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏰</text></svg>">
     <link rel="canonical" href="https://dosemate.github.io/dosemate/">
-    <title>DoseMate – Never Miss Your Medicines</title>
+    <title>Routinix – Reminder, Habit & Health Tracker</title>
     <style>
         :root {
-            --primary: #6C63FF;
-            --primary-dark: #5A52E0;
-            --primary-light: #8B85FF;
-            --accent: #FF6B6B;
+            --primary: #3580FD;
+            --primary-dark: #2A6BE8;
+            --primary-light: #7CA9FF;
+            --accent: #43C7DC;
             --accent-green: #22C55E;
-            --text: #1E1B4B;
+            --text: #172554;
             --text-secondary: #374151;
             --muted: #6B7280;
-            --bg: #F8F7FF;
-            --bg-alt: #F0EDFF;
+            --bg: #F1F5FE;
+            --bg-alt: #E7EEFC;
             --card: #FFFFFF;
-            --border: #E8E6F0;
-            --gradient: linear-gradient(135deg, #6C63FF 0%, #8B85FF 50%, #A78BFA 100%);
-            --shadow: 0 4px 24px rgba(108, 99, 255, 0.12);
-            --shadow-lg: 0 12px 48px rgba(108, 99, 255, 0.18);
+            --border: #DFE7F5;
+            --gradient: linear-gradient(135deg, #3580FD 0%, #43C7DC 100%);
+            --shadow: 0 4px 24px rgba(53, 128, 253, 0.14);
+            --shadow-lg: 0 12px 48px rgba(53, 128, 253, 0.20);
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
@@ -55,7 +55,7 @@
             transition: all 0.3s ease;
         }
         nav.scrolled {
-            box-shadow: 0 2px 20px rgba(108, 99, 255, 0.1);
+            box-shadow: 0 2px 20px rgba(53, 128, 253, 0.12);
         }
         .nav-inner {
             max-width: 1100px;
@@ -84,7 +84,7 @@
             justify-content: center;
             font-size: 1.1rem;
             color: white;
-            box-shadow: 0 2px 8px rgba(108, 99, 255, 0.3);
+            box-shadow: 0 2px 8px rgba(53, 128, 253, 0.35);
         }
         .nav-links {
             display: flex;
@@ -107,12 +107,12 @@
             border-radius: 10px;
             font-weight: 700 !important;
             transition: all 0.2s !important;
-            box-shadow: 0 2px 12px rgba(108, 99, 255, 0.3);
+            box-shadow: 0 2px 12px rgba(53, 128, 253, 0.35);
         }
         .nav-cta:hover {
             background: var(--primary-dark) !important;
             transform: translateY(-1px);
-            box-shadow: 0 4px 16px rgba(108, 99, 255, 0.4);
+            box-shadow: 0 4px 16px rgba(53, 128, 253, 0.45);
         }
         .hamburger {
             display: none;
@@ -148,7 +148,7 @@
             right: -20%;
             width: 800px;
             height: 800px;
-            background: radial-gradient(circle, rgba(108, 99, 255, 0.08) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(53, 128, 253, 0.10) 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
         }
@@ -159,7 +159,7 @@
             left: -10%;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(139, 133, 255, 0.06) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(67, 199, 220, 0.08) 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
         }
@@ -185,7 +185,7 @@
             font-size: 0.85rem;
             font-weight: 700;
             margin-bottom: 1.25rem;
-            border: 1px solid rgba(108, 99, 255, 0.15);
+            border: 1px solid rgba(53, 128, 253, 0.18);
         }
         .hero-badge .dot {
             width: 8px;
@@ -199,7 +199,7 @@
             50% { opacity: 0.4; }
         }
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             font-weight: 900;
             color: var(--text);
             line-height: 1.1;
@@ -217,7 +217,7 @@
             color: var(--muted);
             line-height: 1.7;
             margin-bottom: 2rem;
-            max-width: 500px;
+            max-width: 540px;
         }
         .hero-buttons {
             display: flex;
@@ -236,13 +236,13 @@
             font-weight: 700;
             font-size: 1rem;
             transition: all 0.3s;
-            box-shadow: 0 4px 20px rgba(108, 99, 255, 0.35);
+            box-shadow: 0 4px 20px rgba(53, 128, 253, 0.4);
             border: none;
             cursor: pointer;
         }
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(108, 99, 255, 0.45);
+            box-shadow: 0 8px 30px rgba(53, 128, 253, 0.5);
         }
         .btn-secondary {
             display: inline-flex;
@@ -276,7 +276,7 @@
             background: var(--gradient);
             border-radius: 40px;
             padding: 12px;
-            box-shadow: var(--shadow-lg), 0 0 0 2px rgba(108, 99, 255, 0.1);
+            box-shadow: var(--shadow-lg), 0 0 0 2px rgba(53, 128, 253, 0.12);
             position: relative;
             animation: float 6s ease-in-out infinite;
         }
@@ -287,7 +287,7 @@
         .phone-screen {
             width: 100%;
             height: 100%;
-            background: #1a1a2e;
+            background: #0F0F1A;
             border-radius: 30px;
             display: flex;
             flex-direction: column;
@@ -465,9 +465,9 @@
             font-size: 1.5rem;
             margin-bottom: 1.25rem;
         }
-        .feature-icon.purple { background: rgba(108, 99, 255, 0.1); }
+        .feature-icon.blue { background: rgba(53, 128, 253, 0.1); }
+        .feature-icon.cyan { background: rgba(67, 199, 220, 0.12); }
         .feature-icon.green { background: rgba(34, 197, 94, 0.1); }
-        .feature-icon.blue { background: rgba(59, 130, 246, 0.1); }
         .feature-icon.orange { background: rgba(251, 146, 60, 0.1); }
         .feature-icon.pink { background: rgba(236, 72, 153, 0.1); }
         .feature-icon.teal { background: rgba(20, 184, 166, 0.1); }
@@ -518,7 +518,7 @@
             font-weight: 900;
             color: white;
             margin: 0 auto 1.5rem;
-            box-shadow: 0 4px 20px rgba(108, 99, 255, 0.3);
+            box-shadow: 0 4px 20px rgba(53, 128, 253, 0.35);
         }
         .step h3 {
             font-size: 1.15rem;
@@ -857,8 +857,8 @@
     <nav id="navbar">
         <div class="nav-inner">
             <a href="#" class="nav-brand">
-                <span class="icon">💊</span>
-                DoseMate
+                <span class="icon">⏰</span>
+                Routinix
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#features">Features</a></li>
@@ -881,11 +881,11 @@
             <div class="hero-content">
                 <div class="hero-badge">
                     <span class="dot"></span>
-                    Smart Health Companion
+                    Smart Reminder, Habit & Health Companion
                 </div>
-                <h1>Never Miss Your <span class="highlight">Medicines</span></h1>
+                <h1>Your All-in-One <span class="highlight">Reminder &amp; Habit Tracker</span></h1>
                 <p class="hero-subtitle">
-                    DoseMate helps you stay on track with intelligent medication reminders, water intake tracking, sleep insights, and comprehensive health analytics — all stored privately on your device.
+                    Routinix pairs reliable reminders for medicines, water and tasks with a complete productivity hub — habit streaks, routines, goals, focus sessions, step tracking and smart insights. Everything stays 100% private on your device.
                 </p>
                 <div class="hero-buttons">
                     <a href="https://play.google.com/store/apps/details?id=com.rudra.dosemate" class="btn-primary">
@@ -899,9 +899,9 @@
             <div class="hero-visual">
                 <div class="phone-mockup">
                     <div class="phone-screen">
-                        <div class="app-icon">💊</div>
-                        <div class="app-name">DoseMate</div>
-                        <div class="app-tagline">Never Miss Your Medicines</div>
+                        <div class="app-icon">⏰</div>
+                        <div class="app-name">Routinix</div>
+                        <div class="app-tagline">Reminders • Habits • Health</div>
                         <div class="phone-dots">
                             <span class="active"></span>
                             <span></span>
@@ -910,14 +910,14 @@
                     </div>
                 </div>
                 <div class="floating-card card-1">
-                    <div class="card-emoji">⏰</div>
+                    <div class="card-emoji">💊</div>
                     <div class="card-text">Reminder Set</div>
                     <div class="card-sub">Vitamin D at 9:00 AM</div>
                 </div>
                 <div class="floating-card card-2">
-                    <div class="card-emoji">💧</div>
-                    <div class="card-text">Water Goal</div>
-                    <div class="card-sub">2.4L / 3.0L today</div>
+                    <div class="card-emoji">🔥</div>
+                    <div class="card-text">12-Day Streak</div>
+                    <div class="card-sub">Habit tracker</div>
                 </div>
             </div>
         </div>
@@ -927,20 +927,20 @@
     <div class="stats-bar">
         <div class="stats-inner">
             <div class="stat-item fade-in">
+                <div class="stat-number">17</div>
+                <div class="stat-label">Productivity &amp; Health Modules</div>
+            </div>
+            <div class="stat-item fade-in">
                 <div class="stat-number">100%</div>
-                <div class="stat-label">Private & Local Data</div>
+                <div class="stat-label">Private &amp; On-Device</div>
             </div>
             <div class="stat-item fade-in">
                 <div class="stat-number">24/7</div>
-                <div class="stat-label">Smart Reminders</div>
-            </div>
-            <div class="stat-item fade-in">
-                <div class="stat-number">6+</div>
-                <div class="stat-label">Health Modules</div>
+                <div class="stat-label">Reliable Reminders</div>
             </div>
             <div class="stat-item fade-in">
                 <div class="stat-number">Free</div>
-                <div class="stat-label">No Subscription</div>
+                <div class="stat-label">No Account, No Subscription</div>
             </div>
         </div>
     </div>
@@ -950,39 +950,54 @@
         <div class="section-inner">
             <div class="section-header fade-in">
                 <span class="section-tag">Features</span>
-                <h2>Everything You Need to Stay Healthy</h2>
-                <p>DoseMate combines medication management, health tracking, and wellness insights into one beautifully designed app.</p>
+                <h2>Everything You Need to Build Better Routines</h2>
+                <p>Routinix combines reminders, habit tracking, health tools and smart insights into one beautifully designed, private app.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card fade-in">
-                    <div class="feature-icon purple">💊</div>
-                    <h3>Smart Medicine Reminders</h3>
-                    <p>Set custom schedules for each medication with one-time, daily, or weekly recurrence. Never miss a dose again.</p>
+                    <div class="feature-icon blue">💊</div>
+                    <h3>Smart Reminders</h3>
+                    <p>One-time, daily or weekly schedules for medicines, water and tasks — with exact alarms and voice notifications so you never miss a dose.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon green">✅</div>
+                    <h3>Habit &amp; Streak Tracker</h3>
+                    <p>Build daily or weekly habits, log completions, and watch your streaks grow with a simple, motivating system.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon cyan">📋</div>
+                    <h3>Tasks &amp; Routines</h3>
+                    <p>Manage to-dos with priorities and due dates, and follow multi-step routines to stay consistent every single day.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon orange">🎯</div>
+                    <h3>Goals &amp; Achievements</h3>
+                    <p>Set measurable goals with deadlines, track progress, and unlock badges, XP and levels as you go.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon pink">⏱️</div>
+                    <h3>Focus Timer</h3>
+                    <p>Stay in the zone with focus sessions, review your daily focus minutes, and build deep-work momentum.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon teal">🏃</div>
+                    <h3>Step Counter</h3>
+                    <p>Track your daily steps automatically on-device and work toward personalized step goals with live progress.</p>
                 </div>
                 <div class="feature-card fade-in">
                     <div class="feature-icon blue">💧</div>
-                    <h3>Water Intake Tracker</h3>
-                    <p>BMI-based personalized water goals with timely reminders to keep you properly hydrated throughout the day.</p>
+                    <h3>Health &amp; Water Intake</h3>
+                    <p>BMI-based personalized water goals with timely reminders, plus diet plans and calorie tracking for holistic health.</p>
                 </div>
                 <div class="feature-card fade-in">
-                    <div class="feature-icon green">🌙</div>
-                    <h3>Sleep Tracking</h3>
-                    <p>Log sleep times, set goals, and receive personalized insights to improve your sleep quality and consistency.</p>
+                    <div class="feature-icon green">📔</div>
+                    <h3>Journal &amp; Mood</h3>
+                    <p>Reflect with daily journal entries and mood check-ins — patterns that help you understand your best days.</p>
                 </div>
                 <div class="feature-card fade-in">
-                    <div class="feature-icon orange">📊</div>
-                    <h3>Health Analytics</h3>
-                    <p>Track BMI, adherence charts, weekly breakdowns, and streak information to visualize your health journey.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon pink">🍽️</div>
-                    <h3>Diet Plans</h3>
-                    <p>Log meals, track calories, and manage diet plans alongside your medication schedule for holistic health.</p>
-                </div>
-                <div class="feature-card fade-in">
-                    <div class="feature-icon teal">🧠</div>
-                    <h3>Behavioral Insights</h3>
-                    <p>AI-powered analysis of your habits, best performance times, and personalized suggestions for improvement.</p>
+                    <div class="feature-icon cyan">🌙</div>
+                    <h3>Sleep &amp; Smart Insights</h3>
+                    <p>Log sleep, review a year heatmap, and get smart insights, a productivity score and trend analysis from your local data.</p>
                 </div>
             </div>
         </div>
@@ -994,23 +1009,23 @@
             <div class="section-header fade-in">
                 <span class="section-tag">How It Works</span>
                 <h2>Get Started in 3 Simple Steps</h2>
-                <p>Setting up DoseMate takes less than a minute. Start your health journey today.</p>
+                <p>Setting up Routinix takes less than a minute. Start building your routine today.</p>
             </div>
             <div class="steps">
                 <div class="step fade-in">
                     <div class="step-number">1</div>
-                    <h3>Add Your Medicines</h3>
-                    <p>Enter medicine names, dosages, and set custom reminder schedules that fit your routine.</p>
+                    <h3>Build Your Profile</h3>
+                    <p>Enter your height and weight to get a personalized BMI and water goal — or skip it and start right away.</p>
                 </div>
                 <div class="step fade-in">
                     <div class="step-number">2</div>
-                    <h3>Set Your Goals</h3>
-                    <p>Configure water intake targets, sleep goals, and dietary preferences based on your health profile.</p>
+                    <h3>Add Reminders &amp; Habits</h3>
+                    <p>Set up reminders for medicines and tasks, and create your first habit with daily or weekly schedules.</p>
                 </div>
                 <div class="step fade-in">
                     <div class="step-number">3</div>
                     <h3>Stay On Track</h3>
-                    <p>Receive timely notifications, track your progress, and build healthy habits with streak tracking.</p>
+                    <p>Receive timely notifications, earn XP and badges, and watch your streaks and productivity score grow.</p>
                 </div>
             </div>
         </div>
@@ -1021,28 +1036,28 @@
         <div class="section-inner">
             <div class="benefits-layout">
                 <div class="benefits-content fade-in">
-                    <span class="section-tag">Why DoseMate?</span>
-                    <h2 style="font-size: 2.2rem; font-weight: 900; color: var(--text); margin: 1rem 0 2rem; letter-spacing: -0.5px;">Your Health Data Stays <span style="color: var(--primary);">100% Private</span></h2>
+                    <span class="section-tag">Why Routinix?</span>
+                    <h2 style="font-size: 2.2rem; font-weight: 900; color: var(--text); margin: 1rem 0 2rem; letter-spacing: -0.5px;">Your Health &amp; Habit Data Stays <span style="color: var(--primary);">100% Private</span></h2>
                     <div class="benefits-list">
                         <div class="benefit-item">
                             <div class="benefit-check">✓</div>
                             <div>
                                 <h4>Local-First Storage</h4>
-                                <p>All your health data is stored on your device using Hive &amp; SharedPreferences. Nothing is sent to external servers.</p>
+                                <p>All your reminders, habits and health data are stored on your device using Hive &amp; SharedPreferences. Nothing is sent to external servers.</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <div class="benefit-check">✓</div>
                             <div>
                                 <h4>No Account Required</h4>
-                                <p>Start using DoseMate instantly. No sign-up, no cloud sync, no data breaches to worry about.</p>
+                                <p>Start using Routinix instantly. No sign-up, no cloud sync, no data breaches to worry about.</p>
                             </div>
                         </div>
                         <div class="benefit-item">
                             <div class="benefit-check">✓</div>
                             <div>
                                 <h4>Battery-Friendly Alarms</h4>
-                                <p>Uses Android Alarm Manager for reliable, exact alarms that won't drain your battery.</p>
+                                <p>Uses Android Alarm Manager for reliable, exact alarms that reschedule after reboot and won't drain your battery.</p>
                             </div>
                         </div>
                         <div class="benefit-item">
@@ -1057,7 +1072,7 @@
                 <div class="benefits-visual fade-in">
                     <div class="big-emoji">🛡️</div>
                     <h3>Your Data Never Leaves Your Device</h3>
-                    <p>We believe health data is deeply personal. That's why DoseMate keeps everything local.</p>
+                    <p>We believe your health and habit data is deeply personal. That's why Routinix keeps everything local.</p>
                 </div>
             </div>
         </div>
@@ -1068,13 +1083,13 @@
         <div class="section-inner">
             <div class="section-header fade-in">
                 <span class="section-tag">Reviews</span>
-                <h2>Loved by Health-Conscious Users</h2>
-                <p>See what people are saying about DoseMate.</p>
+                <h2>Loved by Users Who Value Their Routine</h2>
+                <p>See what people are saying about Routinix.</p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-stars">★★★★★</div>
-                    <blockquote>"Finally an app that respects my privacy! All my medicine data stays on my phone. The reminders are reliable and the interface is beautiful."</blockquote>
+                    <blockquote>"Finally one app for everything — my medicine reminders, habits and water goals all in one place, and it's 100% private. The reminders are reliable and the design is gorgeous."</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">👩</div>
                         <div>
@@ -1085,7 +1100,7 @@
                 </div>
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-stars">★★★★★</div>
-                    <blockquote>"The water intake tracker with BMI-based goals is genius. I've never been this hydrated in my life. Highly recommend for anyone managing multiple medications."</blockquote>
+                    <blockquote>"The habit streaks and productivity score completely changed how consistent I am. The focus timer and step counter keep me active every single day. Highly recommended."</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">👨</div>
                         <div>
@@ -1096,7 +1111,7 @@
                 </div>
                 <div class="testimonial-card fade-in">
                     <div class="testimonial-stars">★★★★★</div>
-                    <blockquote>"I use DoseMate for my parents' medications. The streak tracking keeps them motivated and the sleep insights have actually improved their rest quality."</blockquote>
+                    <blockquote>"I manage my parents' medicines with Routinix and track our morning routines too. The streaks keep everyone motivated and the sleep insights actually improved our rest."</blockquote>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">👩</div>
                         <div>
@@ -1112,8 +1127,8 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="section-inner">
-            <h2>Start Your Health Journey Today</h2>
-            <p>Join thousands of users who never miss a dose. Download DoseMate — it's free, private, and designed for you.</p>
+            <h2>Build Better Routines Today</h2>
+            <p>Join users who never miss a dose, a habit, or a goal. Download Routinix — it's free, private, and designed for you.</p>
             <a href="https://play.google.com/store/apps/details?id=com.rudra.dosemate" class="btn-white">
                 ▶ Download for Free
             </a>
@@ -1125,8 +1140,8 @@
         <div class="footer-inner">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3>💊 DoseMate</h3>
-                    <p>Smart medicine &amp; health tracker with intelligent reminders, BMI-based water goals, diet plans, and health analytics. Your privacy is our priority.</p>
+                    <h3>⏰ Routinix</h3>
+                    <p>Your all-in-one reminder, habit &amp; health tracker — smart reminders, habit streaks, routines, goals, health tracking and smart insights. Privacy first, always on-device.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Product</h4>
@@ -1153,7 +1168,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 DoseMate. All rights reserved.</p>
+                <p>&copy; 2026 Routinix. All rights reserved.</p>
                 <p>
                     <a href="privacy-policy.html">Privacy Policy</a> · 
                     <a href="mailto:dosemate.app@gmail.com">dosemate.app@gmail.com</a>
